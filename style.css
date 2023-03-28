@@ -1,23 +1,26 @@
 body {
-       
+       display: flex;
+       flex-direction: column;
        align-items: center;
        justify-content: center;
-       height: 100vh;
-   }
-   
-   #countLabel {
-       margin-left: 50%;
-       display: block;
-       font-size: 50px;
-   }
-   
-   
-   
-   #decreaseBtn,
-   #resetBtn,
-   #increaseBtn {
-       margin-left: 200px;
-       display: inline;
-       font-size: 40px;
-   }
-   
+    }
+    
+    #rollButton {
+       background-color: #4CAF50;
+       border: none;
+       color: white;
+       padding: 10px 20px;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 16px;
+       margin: 10px;
+       cursor: pointer;
+    }
+    
+    #xLabel, #yLabel, #zLabel {
+       font-size: 48px;
+       margin: 10px;
+       text-align: center;
+    }
+    
