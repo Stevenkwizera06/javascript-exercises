@@ -1,0 +1,23 @@
+body {
+       
+       align-items: center;
+       justify-content: center;
+       height: 100vh;
+   }
+   
+   #countLabel {
+       margin-left: 50%;
+       display: block;
+       font-size: 50px;
+   }
+   
+   
+   
+   #decreaseBtn,
+   #resetBtn,
+   #increaseBtn {
+       margin-left: 200px;
+       display: inline;
+       font-size: 40px;
+   }
+   
