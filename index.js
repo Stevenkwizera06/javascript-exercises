@@ -1,40 +1,27 @@
-// Slice method
-/**
- 
-let FullName = "steven kwizera";
-let LastName;
-let firstName;
+document.getElementById("myButton").onclick = function () {
+       const buttonCheck = document.getElementById("myCheckbox");
+       const visaBtn = document.getElementById("visaBtn");
+       const masterCardBtn = document.getElementById("masterCardBtn");
+       const paypalBtn = document.getElementById("visaBtn");
 
-LastName = FullName.slice(0,6)
-firstName = FullName.slice(FullName.indexOf(" ") +1)
-
-console.log(LastName)
-console.log(firstName)
-
- */
-
-
-// Method chaining
-
-/**
- let userName = "Steven";
-let letter = userName.charAt(5).toUpperCase();
-console.log(letter);
- */
-
-
-//If statements
-let age = 80;
-if(age >= 70){
-       console.log("your senior citizen")
+       if(buttonCheck.checked){
+              console.log("you are subscribed")
        }
-else if(age >= 18){
-console.log("you are  adult")
-}
-else if(age < 0){
-console.log("you are not yet born")
-}
+       else{
+              console.log("you are not subscribed")
+       }
 
-else{
-       console.log("you are not adult")
+       if(visaBtn.checked){
+              console.log("you are paying using visa card")
+       }
+       else if(masterCardBtn.checked){
+              console.log("you are paying using master card")
+       }
+       else if(paypalBtn.checked){
+              console.log("you are paying using paypal card")
+       }
+       else{
+              console.log("you must select a payment card!     ")
+       }
+
 }
